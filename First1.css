@@ -1,0 +1,258 @@
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-decoration: none;
+        box-sizing: border-box;
+    }
+    .about-us {
+        color: #fff;
+        text-align: left;
+        margin-top: 50px;
+        font-size: 6px;
+        line-height: 30px; /*Знакомство*/
+    }
+    .main_text {
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 0px;
+        font-size: 17px;
+        color: #fff; /*Заголовок*/
+        animation: myanimation 4s infinite;
+    }
+
+    @keyframes myanimation {
+        0% {
+            color: #f8f8f8;
+            opacity: 0; /*прозрачность в начале*/
+        }
+
+        50% {
+            color: #fff;
+            opacity: 0.5; /*прозрачность в середине анимации*/
+        }
+
+        100% {
+            color: #f8f8f8;
+            opacity: 0; /*прозрачность в конце*/
+        }
+    }
+    p {
+        font-size: 25px;
+        display: block;
+        margin: 0 auto;
+        width: 80%;
+    }
+
+    .title h1 {
+        font-family: Arial, "Helvetica Neue", Arial, Helvetica, sans-serif, sans-serif;
+        font-size: 40px;
+        margin-bottom: 50px;
+        color: #fcfffc;
+    }
+
+    .title span {
+        color: #808080;
+    }
+
+    .list_menu a {
+        font-family: Arial, "Helvetica Neue", Arial, Helvetica, sans-serif, sans-serif;
+        font-size: 25px;
+        color: #fcfffc;
+        border-left: 2px solid #000000;
+        padding-left: 5px;
+        transition: all 0.25s ease;
+    }
+
+        .list_menu a:hover {
+            border-left: 2px solid #ffffff;
+            padding-left: 11px;
+            transition: all 0.25s ease;
+        }
+
+    .footer_menu p {
+        font-family: Arial, "Helvetica Neue", Arial, Helvetica, sans-serif, sans-serif;
+        font-size: 13px;
+        color: #fcfffc;
+    }
+
+    .list_menu {
+        margin-bottom: 350px;
+    }
+
+        .list_menu li {
+            margin: 25px 0;
+        }
+
+    .menu {
+        padding: 25vh 51px;
+        position: fixed;
+        background: rgba(20,20,20,0.5);
+        height: 100vh;
+        backdrop-filter: blur(4px);
+        border-right: 7px solid #000; /*цвет полосы инструментов*/
+        left: -350px; /*Ширина полосы инструментов*/
+    }
+
+        .menu:hover {
+            left: 0;
+            transition: all 0.2s ease;
+        }
+
+body {
+    position: relative;
+    overflow-x: hidden;
+    background: rgba(0, 0, 0, 0.5);
+    background-size: 100%;
+    color: #fff;
+    font-family: 'Montserrat', sans-serif; /*Весь блок кода затемняет фон и центрует его*/
+    text-align: center;
+}
+    #video-bg {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: -5;
+    }
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: -4;
+    }
+.image-container {
+    width: 1000px;
+    height: 1100px;
+    z-index: 1;
+}
+
+        .image-container img {
+            position: absolute;
+            bottom: 100px;
+            left: 0;
+            width: 50%;
+            height: 50%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+#bottom-background {
+    background-color: white;
+    bottom: -48.2%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 130vh; /*измените значение в зависимости от желаемой высоты фона*/
+    z-index: -2;
+}
+    a {
+        font-family: 'Fjalla One', sans-serif;
+        font-size: 24px;
+        color: #fff;
+        font-weight: 500;
+    }
+    #bottom-background * {
+        font-family: inherit;
+    }
+    #bottom-background-2 {
+        background-color: red;
+        text-align: center;
+        line-height: 64px;
+        position: absolute;
+        bottom: -92px; /*расположение красного блока(фона(ссылки)) с текстом "Перейти"*/
+        left: 1026px;
+        width: 10%;
+        height: 5%;
+        opacity: 0.7;
+        z-index: -1;
+    }
+    .san-franc h1 {
+        position: absolute;
+        font-family: 'Fjalla One', sans-serif;
+        font-size: 32px;
+        font-weight: bold;
+        text-align: right;
+        padding-right: 14%;
+        top: 75.2%;
+        left: 53.8%;
+        color: black;
+    }
+
+    .san-franc p {
+        position: absolute;
+        top: 80%;
+        left: 54%;
+        margin-bottom: 0px;
+        font-family: 'Fjalla One', sans-serif;
+        text-align: left;
+        font-size: 18px;
+        line-height: 3;
+        color: black;
+    }
+
+        .san-franc p:first-of-type {
+            margin-top: 61px; /* Изменение */
+        }
+
+        .san-franc p:last-of-type {
+            margin-top: 32px;
+        }
+
+/*ПОДЛЕЖИТ УДАЛЕНИЮ*/
+
+.gallery-container {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    z-index: -2;
+    display: block;
+}
+
+.gallery-slider {
+    display: flex;
+    width: 200%;
+    height: 100px;
+    transition: transform 0.3s ease-in-out;
+    z-index: -2;
+}
+
+.slide {
+    width: 50%;
+    height: 100px;
+    object-fit: cover;
+    z-index: -2;
+}
+
+.prev-button,
+.next-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: -2;
+}
+
+.prev-button {
+    left: 0;
+    z-index: -2;
+}
+
+.next-button {
+    right: 0;
+    z-index: -2;
+}
+/*ПОДЛЕЖИТ УДАЛЕНИЮ*/
